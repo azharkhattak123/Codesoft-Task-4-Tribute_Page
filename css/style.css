@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    color: #e5e5fd;
+}
+
+.container{
+    /* background: #e5e5fd; */
+    height: 100%;
+    border: 6px solid black;
+    background: linear-gradient(rgb(0,0,0), rgb(0,72,10));
+}
+
+.tribute-content{
+    margin: 0 auto;
+    width: 900px;
+    
+}
+
+/* Top section */
+
+.top-section{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    background: linear-gradient(rgb(0,0,0), rgb(0,91,12));
+    border: 2px solid transparent;
+    padding: 15px;
+    transition: all 0.5s ease;
+}
+
+.top-section:hover{
+    background: linear-gradient(rgb(0,0,0), rgb(0,245,33));
+    
+}
+
+.top-section h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.top-section h4{
+    font-size: 25px;
+    font-weight: 500;
+    text-align: end;
+}
+
+
+.tribute-img img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* About section */
+
+.about-section{
+    margin-top: 60px;
+    
+}
+
+.about-section .about-tribute{
+    background: linear-gradient(rgb(0,0,0), rgb(0,200,80));
+    border: 1px solid transparent;
+    padding: 30px;
+    transition: all 0.7s ease;
+}
+
+.about-section .about-tribute:hover{
+    background: transparent;
+    border: 1px solid whitesmoke;
+}
+
+.about-section h2{
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.about-section p{
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1.5px;
+  text-align: justify; 
+}
+
+/* Awards and honour section */
+
+.awards-honour-section{
+    margin-top: 40px;
+   
+}
+
+.awards-honour-section h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.awards-honour-section p{
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+
+}
+
+.awards-honour-section .awards h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.awards-honour-section .awards p{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.awards-honour-section .awards ul{
+    margin-left: 40px;
+
+}
+
+.awards-honour-section .awards ul li{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+ 
+.honour h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.honour ul{
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.honour ul li{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+/* Biography section */
+
+.bioghraphy h3{
+    margin-bottom: 30px;
+    font-size: 25px;
+}
+ 
+.bioghraphy ul{
+    margin-left: 40px;
+    
+
+}
+
+.bioghraphy{
+    border-left: 3px solid rgb(100,165,3);
+    background: linear-gradient(rgb(0,0,0), rgb(100,230,3));
+    padding: 30px;
+    border: 1px solid transparent;
+}
+
+
+.bioghraphy ul li{
+    font-size: 18px;
+    line-height: 35px;
+}
+
+/* Videos section */
+
+.tribute-videos h3{
+    font-size: 25px;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.tribute-videos .videos{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+
+.tribute-videos .videos video{
+    width: 400px;
+}
+
+/* Footer */
+
+footer p{
+    font-size: 18px;
+    margin-top: 50px;
+    text-align: end;
+    margin-bottom: 30px;
+}
+
+footer p a{
+    text-decoration: none;
+}
+
+
+/* Responsive */
+
+/* Tablets responsive */
+
+@media only screen and (max-width:1000px){
+    .tribute-content{
+        width: 700px;
+        margin: 0 auto;
+    }
+    .tribute-img img {
+        width: 221px;
+        height: 215px;
+    }
+    .top-section h1 {
+        font-size: 38px;
+        margin-bottom: 13px;
+    }
+    .about-section h2 {
+        font-size: 38px;
+    }
+    .about-section p {
+        font-size: 16px;
+        line-height: 27px;
+    }
+    .tribute-videos .videos video {
+        width: 300px;
+    }
+}
+
+/* Mobile responsive */
+
+@media only screen and (max-width:500px){
+    .tribute-content {
+        width: 380px;
+        margin: 0 auto;
+    }
+    .tribute-img img {
+        width: 162px;
+        height: 158px;
+    }
+    .top-section h1 {
+        font-size: 24px;
+    }
+    .top-section h4 {
+        font-size: 22px;
+    }
+    .about-section h2 {
+        font-size: 27px;
+        margin-bottom: 25px;
+    }
+    .about-section p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .awards-honour-section h2 {
+        font-size: 21px;
+        margin-bottom: 23px;
+    }
+    .awards-honour-section p {
+        font-size: 15px;
+        margin-bottom: 27px;
+    }
+    .awards-honour-section .awards h3 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+    .awards-honour-section .awards p {
+        font-size: 15px;
+    }
+    .awards-honour-section .awards ul li {
+        font-size: 15px;
+        line-height: 30px;
+    }
+    .honour ul li {
+        font-size: 15px;
+    }
+    .bioghraphy ul li {
+        font-size: 15px;
+    }
+    .tribute-videos h3{
+        margin: 30px 0;
+    }
+    .tribute-videos .videos {
+        grid-template-columns: repeat(1,1fr);
+    }
+    .tribute-videos .videos video {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    footer p {
+        font-size: 18px;
+        margin-top: 1px;
+    }
+}
